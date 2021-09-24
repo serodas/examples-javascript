@@ -1,0 +1,18 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "description": "Ejemplos de callback,promises,async,await,etc.",
+  "main": "src/index.js",
+  "scripts": {
+    "promise": "node src/promise/index.js"
+  },
+  "keywords": [
+    "callback",
+    "promises",
+    "asyn",
+    "await"
+  ],
+  "author": "Samir Rodas",
+  "license": "MIT",
+  "dependencies": {}
+}
