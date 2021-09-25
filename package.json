@@ -6,7 +6,8 @@
   "scripts": {
     "promise": "node src/promise/index.js",
     "promise:awesome": "node src/promise/example1.js",
-    "promise:challenge": "node src/promise/example2.js"
+    "promise:challenge": "node src/promise/example2.js",
+    "promise:async-await": "node src/promise/example3.js"
   },
   "keywords": [
     "callback",
