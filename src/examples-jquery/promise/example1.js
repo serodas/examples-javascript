@@ -1,4 +1,4 @@
-const API = 'https://rickandmortyapi.com/api/character';
+const API = 'https://rickandmortyapi.com/api/character/';
 
 const fetchData = API =>  {
     return new Promise((resolve,reject) => {
@@ -12,13 +12,13 @@ const fetchData = API =>  {
 fetchData(API)
     .then( result => {
         console.log(result.info.count);
-        return fetchData(result.results[0].origin.url);
+        return fetchData(`${API}${result.results[0].id}`);
     })
     .then( result => {
-        console.log(result.dimension);
-        return fetchData(result.residents[0])
+        console.log(result.name);
+        return fetchData(result.origin.url)
     })
-    .then(result => console.log(result.name))
+    .then(result => console.log(result.dimension))
     .catch( error => console.log(error));
 
 console.log('First!');

@@ -14,11 +14,11 @@ const exampleAsync = async(API) => {
         const data = await fetchData(API);
         console.log(data.info.count);
 
-        const character = await fetchData((data.results[0].origin.url));
-        console.log(character.dimension);
+        const character = await fetchData(`${API}${data.results[0].id}`);
+        console.log(character.name);
 
-        const resident = await fetchData(character.residents[0]);
-        console.log(resident.name);
+        const origin = await fetchData(character.origin.url);
+        console.log(origin.dimension);
     }catch(error){
         console.log(error);
     }
