@@ -23,3 +23,5 @@ fetchData(API)
     })
     .then(result => console.log(result.name))
     .catch( error => console.log(error));
+
+console.log('First!');
