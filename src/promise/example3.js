@@ -2,7 +2,11 @@ const API = 'https://rickandmortyapi.com/api/character/';
 
 const fetchData = new Promise((resolve,reject) =>{
     $.get(API,function(response){
-        resolve(response);
+        if(false){
+            resolve(response);
+        }else{
+            reject(new Error('Error ocurred!',API));
+        }
     });
 });
 
@@ -19,4 +23,5 @@ fetchData.then( result => result)
             response;
          });
     })
-    .then(result => console.log(result.name));
+    .then(result => console.log(result.name))
+    .catch( error => console.log(error));
