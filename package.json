@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "promise": "node src/promise/index.js",
-    "promise2": "node src/promise/example2.js"
+    "promise:awesome": "node src/promise/example1.js",
+    "promise:challenge": "node src/promise/example2.js"
   },
   "keywords": [
     "callback",
