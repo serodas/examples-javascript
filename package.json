@@ -4,6 +4,7 @@
   "description": "Examples callback,promises,async,await,etc.",
   "main": "src/index.js",
   "scripts": {
+    "callback": "node src/callback/index.js",
     "promise": "node src/promise/index.js",
     "promise:awesome": "node src/promise/example1.js",
     "promise:challenge": "node src/promise/example2.js",
